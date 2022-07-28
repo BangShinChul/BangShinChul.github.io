@@ -1,23 +1,34 @@
-title: Jekyll Serial Programmer
+title: bsc wiki
 markdown: kramdown
-url: ""
-baseurl: "/jekyll-theme-serial-programmer"
+url: "https://bangshinchul.github.io"
+baseurl: ""
+description: >
+        물음표가 느낌표로 바뀔때까지
 
 # for atom feed
 author:
-  name: Sharad Raj Singh Maurya
-  email: dev_sharad@outlook.com
+  name: Bang shin chul
+  email: bsc0227@gmail.com
+  github_username: BangShinChul
+
+permalink: /blog/:year/:month/:day/:title/
 
 plugins:
   - jemoji
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-relative-links
+  - webrick
 
 collections_dir: all_collections
 collections:
   posts:
     output: true
+
+relative_links:
+  enabled: true
+  collections: true
 
 defaults:
   - scope:
